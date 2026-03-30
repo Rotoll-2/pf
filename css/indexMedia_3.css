@@ -4,7 +4,7 @@
     html{
         font-size: 12px;
     }
-    
+
     /* 헤더 조절 */
     header{
         width: 60%;
@@ -133,9 +133,11 @@
 
     
     /* 영상 크기 조절 */
+    .popup{
+        width: 100%;
+    }
     .popup ._169Video{
         width: 95%;
-        height: 540px;
     }
 
 
