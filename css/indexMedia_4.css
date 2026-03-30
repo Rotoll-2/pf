@@ -1,0 +1,313 @@
+@charset "utf-8";
+@media screen and (max-width : 768px) {
+    /* 전체 폰트 사이즈 조절 */
+    html{
+        font-size: 10px;
+    }
+
+    .hero .soge{
+        color: white;
+        font-size: 3rem;
+
+    }
+    .hero .subsoge{
+
+        font-size: 1rem;
+
+    }
+    
+
+    /* 헤더 조절 */
+    header{
+        width: 60%;
+        min-width: 350px;
+    }
+    header nav{
+        width: 60%;
+    
+    }
+    header>button{
+    display: none;
+    }
+
+    /* 포트폴리오 섹션 세팅 */
+    .port-grid{
+    height: 3800px;
+    gap: 30px;
+    }
+
+    /* 박스 크기 조절 */
+    .Lbox,
+    .Hbox,
+    .Mbox,
+    .Sbox{
+        width: 90%;
+        min-width: 350px;
+        height: 670px;
+    }
+
+    .Hbox{
+        height: 500px;
+    }
+    .Mbox{
+        height: 550px;
+    }
+
+
+
+    /* 세부 박스 조절 */
+    .interV.bigBox{
+        top: 20px; right: 30px;
+        width: 40%;
+        min-width: 300px;
+        height: 60%;
+    }
+    .interV.title{
+        top: 40px; left: 30px;
+    }
+    .interV.comment{
+        top: 40%; left: 30px;
+    }
+    .interV.linkButton{
+        left: 30px; bottom:5%;
+    }
+    .interV.icons{
+        top:100px;
+        left: 30px;
+    }
+
+    .ch1.title{
+
+        top: 50px; left: 30px;
+
+    }
+    .ch1.comment{
+
+        top: 62%; left: 30px;
+
+    }
+    .ch1.icons{
+
+        left:30px; top:120px;
+
+    }
+    .ch1.backImage{
+
+        top: 40%; left: 30px;
+
+    }
+    
+    .ch1.linkButton{
+
+        bottom: 40%; left: 30px;
+
+    }
+
+
+    .ch2.title{
+
+        top: 50px; left: 30px;
+
+    }
+    .ch2.comment{
+
+        top: 40%; left: 30px;
+
+    }
+    .ch2.icons{
+
+        left:30px; top:120px;
+
+    }
+    .ch2.backImage{
+
+        top:55%; left: 30px;
+
+    }
+    
+    .ch2.linkButton{
+
+        top: 80%; left: 30px;
+
+    }
+
+    .ch1.comment,
+    .ch2.comment{
+        width: 85%;
+        
+        
+    }
+    .ch1.comment{
+        top: 75%;
+    }
+
+    .typoG.bigBox{
+        
+        top: 20px; left: 25px;
+
+        width: 35%; height: 60%;
+
+    }
+    
+    .typoG.title{
+
+        top: 40px; left: 20px;
+    }
+    .typoG.comment{
+
+        top: 40%; left: 20px;
+    }
+    .typoG.icons{
+        left :20px; top:100px;
+
+    }
+    
+    .typoG.linkButton{
+
+        bottom: 5%; left: 20px;
+
+    }
+
+    .typoG.bigBox{
+        width: 45%;
+        min-width: 300px;
+
+    }
+
+
+    .prod.title{
+        top: 50px; left: 20px;
+
+    }
+    .prod.comment{
+
+        top: 82%; left: 20px;
+
+    }
+    .prod.icons{
+
+        left:20px; top:110px;
+
+    }
+    .prod.backImage{
+        top: 32%; left: 20px;
+
+    }
+
+
+    .prod.backImage{
+        width: 45%;
+        max-width: 350px;
+        min-width: 300px;
+    }
+    .prod.linkButton{
+        left: 55%;
+    }
+
+
+    
+
+
+    .blend.bigBox{
+
+        width: 90%;
+        height: 50%;
+    }
+
+    
+    .blend.icons{
+
+        left :50px; top:103px;
+
+    }
+
+
+    /* 박스 안 버튼 조절 */
+    .interV.linkButton,
+    .typoG.linkButton,
+    .prod.linkButton{
+        width: 150px;
+        height: 45px;
+    }
+
+    .ch1.linkButton{
+        bottom: 29%;
+    }
+
+    .ch1.linkButton,
+    .ch2.linkButton,
+    .blend.linkButton{
+        width: 170px;
+        height: 45px;
+    }
+
+    .blend.linkButton{
+        bottom: 10%;
+    }
+
+    
+    /* 영상 크기 조절 */
+    .popup{
+        width: 100vw !important;
+        height: 100% !important;
+    }
+    .popup ._169Video{
+        width: 95%;
+    }
+
+    iframe,
+    .prodImage,
+    .ch1Image,
+    .ch2Image{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* 기술 아코디언 조절 */
+
+    .skill-acco{
+        width: 95%;
+        height: 650px;
+    }
+
+    .list{
+        width: 100%;
+        height: 600px;
+        gap: 10px;
+    }
+    .list li .content{
+        width: 80%;
+    }
+    .skillimg{
+        top: 320px; right: 10%;
+        width: 80%;
+        height: 35%;
+    }
+
+
+    .H2{
+        top: 40px; left: 20px;
+    }
+    .list li .content{
+        top: 125px; left: 20px;
+    }
+
+
+    /* 컨텍트 섹션 조절 */
+    .contact {
+        height: 500px;
+        
+    }
+    .contBox{
+        width: 95%;
+        height: 400px;        
+    }
+
+    .contBox .picture{
+
+        width: 120px; height: 160px;
+        left:60%;
+    }
+
+}
