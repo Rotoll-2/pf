@@ -13,8 +13,8 @@
 
     /* 포트폴리오 섹션 세팅 */
     .port-grid{
-    height: 3000px;
-    gap: 30px;
+        height: 3000px;
+        gap: 30px;
     }
 
     /* 박스 크기 조절 */
