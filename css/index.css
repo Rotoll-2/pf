@@ -15,6 +15,16 @@ a{
     text-decoration: none;
     color: inherit;
 }
+body{
+    background-color: red;
+    overflow-x: hidden !important;
+
+}
+html{
+    overflow-x: hidden !important;
+
+}
+
 
 /* 헤더 세팅 */
 
@@ -23,10 +33,10 @@ header{
     
     width: 60%;
     height: 80px;
-    top:4%;  left: 50%;
+
+    top:4%; left: 50%;
     transform: translate(-50%,0);
     background-color: #fffcf3;
-    padding: 0 2rem;
 
     border-radius: 30px;
     align-content: center;
@@ -38,7 +48,7 @@ header{
     align-items: center;
     padding: 0 2rem;
 
-    box-shadow: 1px 3px 20px #41414128;
+    box-shadow: 1px 3px 2px #41414128;
 
 }
 header>h1{
@@ -78,6 +88,7 @@ header>button{
 
 /* 메인 세팅 */
 main{
+
     background: #fffcf3;
     display: flex;
 
@@ -99,7 +110,7 @@ main{
 */
 
 .hero video{
-    width: 100vw;
+    width: 100%;
     height: 100dvh;
 
     object-fit: cover;
@@ -141,7 +152,7 @@ main{
 
 /* 포트폴리오 섹션 세팅 */
 .port-grid{
-    width: 1700px;
+    width: 95%;
     height: 3500px;
     margin:0 auto;
     display: flex;
@@ -536,7 +547,8 @@ main{
     position: fixed;
     width: 100%;
     height: 100%;
-    top: 0;left: 0%;
+    top: 0;left: 0;
+    right: 0;
     opacity: 0;
     visibility: hidden;
     background-color: rgba(34, 34, 34, 0.974);
@@ -551,7 +563,7 @@ main{
     overflow: hidden;
 }
 
-.popup button{
+/* .popup button{
     position: relative;
     left: 95%;top: 10px;
     background-color: transparent;
@@ -561,7 +573,7 @@ main{
     font-size: 2rem;
     color: white;
     margin: 20px 0;
-}
+} */
 
 
 .popup ._169Video{
@@ -579,7 +591,6 @@ iframe,
 .ch2Image{
     width: 100%;
     height: 100%;
-    aspect-ratio: 16/9;
     object-fit: contain;
     position: absolute;
     top: 50%;left: 50%;
@@ -665,18 +676,21 @@ iframe,
 
 .list li:nth-child(1) .content{
     opacity: 1;
+    transform : scale(1);
 
 }
 .list li:nth-child(2) .content,
 .list li:nth-child(3) .content{
     opacity: 0;
-
+    transform : scale(0);
 }
+
 
 .list li:nth-child(1) .skillimg{
     transform : scale(1);
 
 }
+
 .list li:nth-child(2) .skillimg,
 .list li:nth-child(3) .skillimg{
     transform : scale(0);
@@ -689,7 +703,9 @@ iframe,
 }
 .list:hover li .content{
     opacity: 0;
+    transform : scale(0);
 }
+
 .list:hover li .skillimg{
     transform : scale(0);
 }
@@ -700,7 +716,9 @@ iframe,
 }
 .list li:hover .content{
     opacity: 1;
+    transform : scale(1);
 }
+
 .list li:hover .skillimg{
     transform : scale(1);
 }
