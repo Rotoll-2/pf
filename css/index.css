@@ -1,0 +1,788 @@
+@charset "utf-8";
+
+/* 기본 세팅 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 헤더 세팅 */
+
+header{
+    position: fixed;
+    
+    width: 60%;
+    height: 80px;
+    top:4%;  left: 50%;
+    transform: translate(-50%,0);
+    background-color: #fffcf3;
+    padding: 0 2rem;
+
+    border-radius: 30px;
+    align-content: center;
+    z-index: 1000;
+    color: #4f0b54;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+
+    box-shadow: 1px 3px 20px #41414128;
+
+}
+header>h1{
+    width: 100px;
+    font-weight: bold;
+}
+header nav{
+    width: 350px;
+
+}
+
+header nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+header nav ul li.on{
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+header>button{
+    width: 100px;
+    padding: 15px 0;
+    border-style: none;
+    border-radius: 20px;
+    background: #4f0b54;
+    color: #fffcf3;
+    font-size: 1.1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* 메인 세팅 */
+main{
+    background: #fffcf3;
+    display: flex;
+
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-start;
+    gap: 10px;
+}
+/* 히어로 섹션 세팅 */
+
+/* 
+.hero img{
+    width: 100%;
+    height: 100dvh;
+
+    object-fit: contain;
+} 
+*/
+
+.hero video{
+    width: 100vw;
+    height: 100dvh;
+
+    object-fit: cover;
+}
+
+.hero{
+    transform: scale(1);
+    margin:0 auto;
+    transition: transform 0.5s ease, border-radius 0.5s ease;
+    overflow: hidden;
+    position: relative;
+}
+.hero.shrink{
+    transform: scale(0.85);
+    border-radius:40px;
+}
+
+.hero .soge{
+    width: 40%;
+    position: absolute;
+    left: 15%; bottom: 20%;
+
+    color: white;
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.hero .subsoge{
+    width: 30%;
+    position: absolute;
+    right: 13%; bottom: 20%;
+
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    text-align: right;
+}
+
+
+/* 포트폴리오 섹션 세팅 */
+.port-grid{
+    width: 1700px;
+    height: 3500px;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-start;
+    gap: 50px;
+    margin-top: 150px;
+}
+
+.Lbox{
+    width: 1600px;
+    height: 800px;
+    /* border: 2px solid rgba(255,255,255,0.4); */
+    border-radius: 20px;
+    /* position: relative; */
+    background: rgb(30,30,34);
+    transition: all .3s;
+
+}
+.Hbox{
+    width: 775px;
+    height: 800px;
+    /* border: 2px solid rgba(255,255,255,0.4); */
+    border-radius: 20px;
+    /* position: relative; */
+    background: rgb(30,30,34);
+    transition: all .3s;
+
+}
+.Mbox{
+    width: 1000px;
+    height: 800px;
+    /* border: 2px solid rgba(255,255,255,0.4); */
+    border-radius: 20px;
+    /* position: relative; */
+    background: rgb(30,30,34);
+    transition: all .3s;
+
+}
+.Sbox{
+    width: 550px;
+    height: 800px;
+    /* border: 2px solid rgba(255,255,255,0.4); */
+    border-radius: 20px;
+    /* position: relative; */
+    background: rgb(30,30,34);
+    transition: all .3s;
+    
+}
+
+.linkButton{
+    cursor: pointer;
+}
+
+
+/* 아이콘 기본 세팅 */
+.illicon, .AEicon, .preicon, .photoicon, .blendicon, .nbicon, .klingicon{
+    width: 50px;
+}
+.klingicon{
+    scale: 1.15;
+}
+
+/* 인터뷰 박스 */
+.interview{
+    position: relative;
+    background-color: #414141;
+
+}
+
+.interV.bigBox{
+    position: absolute;
+    top: 40px; right: 40px;
+    background-color: #ffeafe;
+    width: 35%; height: 90%;
+    border-radius: 20px;
+}
+
+.interV.title{
+    position: absolute;
+    top: 40px; left: 50px;
+    font-size: 3.5rem;
+    font-weight: bold;
+    /* letter-spacing: -0.5px; */
+}
+.interV.comment{
+    width: 80%;
+    position: absolute;
+    top: 30%; left: 50px;
+    font-size: 1.5rem;
+    /* letter-spacing: -0.5px; */
+}
+.interV.icons{
+    width: 15%;
+    position: absolute;
+    left :50px; top:130px;
+    display: flex;
+    gap: 10px;
+}
+.interV.thumb{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.interV.linkButton{
+    position: absolute;
+    width: 220px;
+    height: 50px;
+    border-radius: 20px;
+    bottom: 20%; left: 10%;
+    background-color: #ffb4fc;
+    border-style: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+/* 종겜 채널 박스 */
+.Y-ch_1{
+    position: relative;
+    background-color: #ffbffd;
+}
+.ch1.title{
+    width: 100%;
+    position: absolute;
+    top: 50px; left: 50px;
+    font-size: 3.5rem;
+    font-weight: bold;
+    /* letter-spacing: -0.5px; */
+    line-height: 1.25;
+}
+.ch1.comment{
+    width: 90%;
+    position: absolute;
+    top: 62%; left: 50px;
+    font-size: 1.5rem;
+    /* letter-spacing: -0.5px; */
+}
+.ch1.icons{
+    width: 15%;
+    position: absolute;
+    left:50px; top:135px;
+    display: flex;
+    gap: 20px;
+}
+.ch1.backImage{
+    position: absolute;
+    top: 27%; left: 50px;
+    width: 84%;
+    /* box-shadow: 5px 5px 3px rgb(54, 54, 54); */
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.ch1.linkButton{
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    border-radius: 20px;
+    bottom: 40%; left: 50px;
+    background-color: #ffeefe;
+    border-style: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* 리뷰 채널 박스 */
+.Y-ch_2{
+    position: relative;
+    background-color: #3b7cd0;
+    color: white;
+}
+.ch2.title{
+    width: 100%;
+    position: absolute;
+    top: 50px; left: 50px;
+    font-size: 3.5rem;
+    font-weight: bold;
+    /* letter-spacing: -0.5px; */
+    line-height: 1.25;
+}
+.ch2.comment{
+    width: 90%;
+    position: absolute;
+    top: 30%; left: 50px;
+    font-size: 1.5rem;
+    /* letter-spacing: -0.5px; */
+}
+.ch2.icons{
+    width: 15%;
+    position: absolute;
+    left:50px; top:135px;
+    display: flex;
+    gap: 10px;
+}
+.ch2.backImage{
+    position: absolute;
+    top: 55%; left: 50px;
+    width: 84%;
+    /* box-shadow: 5px 5px 3px rgb(54, 54, 54); */
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.ch2.linkButton{
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    border-radius: 20px;
+    top: 43%; left: 50px;
+    background-color: #c5d8f0;
+    border-style: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+/* 타이포 박스 */
+.Typo{
+    position: relative;
+    background-color: #414141;
+
+}
+
+.typoG.bigBox{
+    position: absolute;
+    top: 40px; left: 40px;
+    background-color: #eceaff;
+    width: 35%; height: 90%;
+    border-radius: 20px;
+}
+
+.typoG.title{
+    position: absolute;
+    top: 40px; left: 50px;
+    font-size: 3.5rem;
+    font-weight: bold;
+    /* letter-spacing: -0.5px; */
+}
+.typoG.comment{
+    width: 80%;
+    position: absolute;
+    top: 30%; left: 50px;
+    font-size: 1.5rem;
+    /* letter-spacing: -0.5px; */
+}
+.typoG.icons{
+    width: 15%;
+    position: absolute;
+    left :50px; top:130px;
+    display: flex;
+    gap: 10px;
+}
+.typoG.thumb{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.typoG.linkButton{
+    position: absolute;
+    width: 220px;
+    height: 50px;
+    border-radius: 20px;
+    bottom: 23%; left: 50px;
+    background-color: #c2bcff;
+    border-style: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* 상세페이지 박스*/
+.Product{
+    position: relative;
+    background-color: #ffebbf;
+}
+.prod.title{
+    width: 100%;
+    position: absolute;
+    top: 50px; left: 50px;
+    font-size: 3.5rem;
+    font-weight: bold;
+    /* letter-spacing: -0.5px; */
+    line-height: 1.25;
+}
+.prod.comment{
+    width: 90%;
+    position: absolute;
+    top: 70%; left: 50px;
+    font-size: 1.5rem;
+    /* letter-spacing: -0.5px; */
+}
+.prod.icons{
+    width: 15%;
+    position: absolute;
+    left:50px; top:135px;
+    display: flex;
+    gap: 20px;
+}
+.prod.backImage{
+    position: absolute;
+    top: 27%; left: 50px;
+    width: 36%;
+    /* box-shadow: 5px 5px 3px rgb(54, 54, 54); */
+    border-radius: 20px;
+    cursor: pointer;
+}
+/* .prod.linkButton{
+    position: absolute;
+    width: 220px;
+    height: 50px;
+    border-radius: 20px;
+    bottom: 33%; left: 44%;
+    background-color: #ffd45f;
+    border-style: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+} */
+
+
+/* 블렌더 박스 */
+.blender{
+    position: relative;
+    background-color: #414141;
+
+}
+
+.blend.bigBox{
+    position: absolute;
+    top: 40px; left: 50%;
+    transform: translate(-50%,0);
+    background-color: #ffeafe;
+    width: 85%; height: 50%;
+    border-radius: 20px;
+}
+
+.blend.title{
+    position: absolute;
+    top: 30px; left: 50px;
+    font-size: 3.5rem;
+    font-weight: bold;
+    /* letter-spacing: -0.5px; */
+}
+.blend.comment{
+    width: 80%;
+    position: absolute;
+    top: 48%; left: 50px;
+    font-size: 1.5rem;
+    /* letter-spacing: -0.5px; */
+}
+.blend.icons{
+    width: 15%;
+    position: absolute;
+    left :50px; top:120px;
+    display: flex;
+    gap: 10px;
+}
+.blend.thumb{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.blend.linkButton{
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    border-radius: 20px;
+    bottom: 8%; left: 50px;
+    background-color: #ffb4fc;
+    border-style: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+/* 비디오 팝업 창 관리 */
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;left: 0%;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(34, 34, 34, 0.974);
+    z-index: 9999;
+    transition: all .5s;
+}
+.popup.on{
+    opacity: 1;
+    visibility: visible;
+}
+.hideOver{
+    overflow: hidden;
+}
+
+.popup button{
+    position: relative;
+    left: 95%;top: 10px;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+    margin: 20px 0;
+}
+
+
+.popup ._169Video{
+    width: 1280px;
+    height: 720px;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin: auto;
+}
+
+iframe,
+.prodImage,
+.ch1Image,
+.ch2Image{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+/* 기술 아코디언 섹션 세팅 */
+.skill-acco{
+    width: 90%;
+    height: 1000px;
+    /* background: #000; */
+}
+
+.list{
+    width: 80%;
+    height: 750px;
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.list li {
+    position: relative;
+    flex: 1;
+    transition: all .5s;
+    border-radius: 15px;
+}
+
+
+.H2{
+    position: absolute;
+    top: 40px; left: 40px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.H2.Video{
+    color: #f2f6ff;
+}
+
+.H2.Document{
+    color: #fff9f2;
+}
+
+.H2.ETC{
+    color: #f5fff2;
+}
+
+.skillimg{
+    position: absolute;
+    top: 125px; right: 40px;
+    width: 40%;
+    height: 75%;
+    overflow: hidden;
+    border-radius: 20px;
+    object-fit:cover;
+}
+
+.list li .content{
+    position: absolute;
+    top: 125px; left: 40px;
+    width: 50%;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.7;
+    transition: all .3s;
+   
+}
+
+.list li:nth-child(1){
+    background-color: #4683ff;
+    flex:3;
+
+}
+.list li:nth-child(2){
+    background-color: #ff7b3e;
+}
+.list li:nth-child(3){
+    background-color: #48a74f;
+}
+
+
+.list li:nth-child(1) .content{
+    opacity: 1;
+
+}
+.list li:nth-child(2) .content,
+.list li:nth-child(3) .content{
+    opacity: 0;
+
+}
+
+.list li:nth-child(1) .skillimg{
+    transform : scale(1);
+
+}
+.list li:nth-child(2) .skillimg,
+.list li:nth-child(3) .skillimg{
+    transform : scale(0);
+
+}
+
+/* flex 초기화 */
+.list:hover li{
+    flex:1;
+}
+.list:hover li .content{
+    opacity: 0;
+}
+.list:hover li .skillimg{
+    transform : scale(0);
+}
+
+/* hover한 것만 3으로 */
+.list li:hover{
+    flex:3;
+}
+.list li:hover .content{
+    opacity: 1;
+}
+.list li:hover .skillimg{
+    transform : scale(1);
+}
+
+
+/* 컨텍트 섹션 세팅 */
+.contact {
+    width: 100%;
+    height: 750px;
+    background: #fffcf3;
+    margin: 0 auto;      /* 좌우 중앙 */
+
+    display:flex;       /* flex 활성화 */
+    justify-content:center;  /* 가로 중앙 */
+    
+}
+
+.contBox{
+    
+    background-color: #d9e0c5;
+    width: 950px;
+    height: 550px;
+    margin:0 auto;      /* 좌우 중앙 */
+    border-style: none;
+    border-radius: 30px;
+    position: relative;
+    
+}
+
+.contBox h1{
+    position: absolute;
+    top: 20px; left: 40px;
+    font-size: 3rem;
+    color: #5b6d29;
+}
+
+.contBox h2{
+    position: absolute;
+    top: 80%; left: 15%;
+    
+    font-size: 1.5rem;
+    color: #5a6345;
+
+    letter-spacing:-0.01em;
+}
+
+.contBox .picture{
+    position: absolute;
+    top: 57%; left:63%;
+    transform: translate(0, -50%);
+    width: 270px; height: 360px;
+    overflow: hidden;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.contBox .subject{
+    position: absolute;
+    top: 50%; left: 15%;
+    transform: translate(0, -50%);
+    width: 40%;
+    font-size: 3rem;
+    line-height: 1.35;
+    color: #353f18;
+}
+
+.contBox .subject .name{
+    font-weight: bold;
+}
+
+.contBox .subject .job{
+    padding-bottom: 3rem;
+}
+
+.contBox .subject .email{
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+}
+.contBox .subject .job,
+.contBox .subject .phone,
+.contBox .subject .region{
+    font-size: 1.5rem;
+
+}

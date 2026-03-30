@@ -1,0 +1,97 @@
+@charset "utf-8";
+@media screen and (max-width : 1630px) {
+    /* 전체 폰트 사이즈 조절 */
+    html{
+        font-size: 14px;
+    }
+    
+    /* 헤더 조절 */
+    header{
+        width: 80%;
+    }
+
+    /* 박스 크기 조절 */
+    .Lbox{
+        width: 1400px;
+    
+    }
+    .Hbox{
+        width: 675px;
+    
+    }
+    .Mbox{
+        width: 900px;
+    
+    }
+    .Sbox{
+        width: 450px;
+        
+    }
+
+    /* 세부 박스 조절 */
+    .prod.backImage{
+
+        width: 40%;
+
+    }
+
+    /* 박스 안 버튼 조절 */
+    .interV.linkButton,
+    .typoG.linkButton,
+    .prod.linkButton{
+        width: 200px;
+        height: 45px;
+    }
+    .prod.linkButton{
+        left: 48%;
+    }
+
+
+    .ch1.linkButton{
+        bottom: 43%;
+    }
+
+    .ch1.linkButton,
+    .ch2.linkButton,
+    .blend.linkButton{
+        width: 220px;
+        height: 45px;
+    }
+
+    .blend.linkButton{
+        bottom: 10%;
+    }
+
+    
+    /* 영상 크기 조절 */
+    .popup ._169Video{
+        width: 1120px;
+        height: 630px;
+    }
+
+
+    /* 기술 아코디언 조절 */
+
+    .skill-acco{
+        width: 90%;
+        height: 850px;
+        /* background: #000; */
+    }
+
+    .list{
+        width: 95%;
+        height: 700px;
+    }
+
+
+    /* 컨텍트 섹션 조절 */
+
+    .contact {
+        height: 600px;        
+    }
+    .contBox{
+        width: 850px;
+        height: 500px;        
+    }
+
+}
