@@ -1,5 +1,5 @@
 @charset "utf-8";
-@media screen and (max-width : 1450px) {
+@media screen and (max-width : 1480px) {
     /* 전체 폰트 사이즈 조절 */
     html{
         font-size: 12px;
