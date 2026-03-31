@@ -1,5 +1,5 @@
 @charset "utf-8";
-@media screen and (max-width : 1680px) {
+@media screen and (max-width : 1730px) {
     /* 전체 폰트 사이즈 조절 */
     html{
         font-size: 14px;
@@ -75,7 +75,7 @@
     /* 기술 아코디언 조절 */
 
     .skill-acco{
-        width: 90%;
+        width: 85%;
         height: 850px;
         /* background: #000; */
     }
