@@ -243,7 +243,7 @@ main{
     width: 80%;
     position: absolute;
     top: 30%; left: 50px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     /* letter-spacing: -0.5px; */
 }
 .interV.icons{
@@ -293,7 +293,7 @@ main{
     width: 90%;
     position: absolute;
     top: 62%; left: 50px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     /* letter-spacing: -0.5px; */
 }
 .ch1.icons{
@@ -343,7 +343,7 @@ main{
     width: 90%;
     position: absolute;
     top: 30%; left: 50px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     /* letter-spacing: -0.5px; */
 }
 .ch2.icons{
@@ -401,7 +401,7 @@ main{
     width: 80%;
     position: absolute;
     top: 30%; left: 50px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     /* letter-spacing: -0.5px; */
 }
 .typoG.icons{
@@ -426,7 +426,7 @@ main{
     width: 220px;
     height: 50px;
     border-radius: 20px;
-    bottom: 23%; left: 50px;
+    bottom: 38%; left: 50px;
     background-color: #c2bcff;
     border-style: none;
     font-size: 1.1rem;
@@ -451,7 +451,7 @@ main{
     width: 90%;
     position: absolute;
     top: 70%; left: 50px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     /* letter-spacing: -0.5px; */
 }
 .prod.icons{
@@ -509,7 +509,7 @@ main{
     width: 80%;
     position: absolute;
     top: 48%; left: 50px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     /* letter-spacing: -0.5px; */
 }
 .blend.icons{
