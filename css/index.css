@@ -110,7 +110,7 @@ main{
 */
 
 .hero video{
-    width: 100%;
+    width: 100vw;
     height: 100dvh;
 
     object-fit: cover;
@@ -600,7 +600,7 @@ iframe,
 
 /* 기술 아코디언 섹션 세팅 */
 .skill-acco{
-    width: 90%;
+    width: 100%;
     height: 1000px;
     /* background: #000; */
 }
