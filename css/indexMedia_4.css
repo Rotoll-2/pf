@@ -93,7 +93,8 @@
     }
     .ch1.backImage{
 
-        top: 40%; left: 30px;
+        top: 38%; left: 30px;
+        max-width: 350px;
 
     }
     
@@ -121,7 +122,8 @@
     }
     .ch2.backImage{
 
-        top:55%; left: 30px;
+        top:52%; left: 30px;
+        max-width: 350px;
 
     }
     
