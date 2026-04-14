@@ -130,7 +130,7 @@ main{
 .hero .soge{
     width: 40%;
     position: absolute;
-    left: 15%; bottom: 20%;
+    left: 12%; bottom: 20%;
 
     color: white;
     font-size: 4.8rem;
@@ -138,9 +138,9 @@ main{
     line-height: 1.2;
 }
 .hero .subsoge{
-    width: 30%;
+    width: 35%;
     position: absolute;
-    right: 13%; bottom: 20%;
+    right: 10%; bottom: 20%;
 
     color: white;
     font-size: 1.5rem;
