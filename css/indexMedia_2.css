@@ -54,7 +54,7 @@
     }
     .prod.comment{
 
-        top: 72%;
+        top: 75%;
 
     }
 
@@ -102,18 +102,19 @@
     /* 박스 안 버튼 조절 */
     .interV.linkButton,
     .typoG.linkButton,
-    .prod.linkButton{
+    .prod.linkButton,
+    .blend.linkButton{
         width: 180px;
         height: 45px;
     }
 
     .ch1.linkButton{
-        bottom: 43%;
+        bottom: 41%;
     }
 
     .ch1.linkButton,
-    .ch2.linkButton,
-    .blend.linkButton{
+    .ch2.linkButton
+    {
         width: 200px;
         height: 45px;
     }
@@ -143,8 +144,13 @@
         gap: 25px;
     }
     .list li .content{
-        width: 40%;
-       
+        width: 50%;
+        font-size: 1.4rem;
+    }
+    .skillimg{
+
+        width: 35%;
+
     }
 
 

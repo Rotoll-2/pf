@@ -56,6 +56,11 @@ $(function(){
         $("body").addClass("hideOver");
     })
 
+    $('.blend.linkButton').click(function(){
+        $('.popup.blendV').addClass('on')
+        $("body").addClass("hideOver");
+    })
+
     $('.prod.backImage').click(function(){
         $('.popup.prodI').addClass('on')
         $("body").addClass("hideOver");
@@ -73,6 +78,7 @@ $(function(){
 
     $('.popup button, .popup').click(function(){
         $('.popup.typoV').removeClass('on');
+        $('.popup.blendV').removeClass('on');
         $('.popup.prodI').removeClass('on');
         $('.popup.ch1I').removeClass('on');
         $('.popup.ch2I').removeClass('on');

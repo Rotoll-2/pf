@@ -242,7 +242,8 @@
     /* 박스 안 버튼 조절 */
     .interV.linkButton,
     .typoG.linkButton,
-    .prod.linkButton{
+    .prod.linkButton,
+    .blend.linkButton{
         width: 150px;
         height: 45px;
     }
@@ -252,8 +253,7 @@
     }
 
     .ch1.linkButton,
-    .ch2.linkButton,
-    .blend.linkButton{
+    .ch2.linkButton{
         width: 170px;
         height: 45px;
     }
