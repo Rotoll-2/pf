@@ -228,7 +228,7 @@ main{
 .interV.bigBox{
     position: absolute;
     top: 40px; right: 40px;
-    background-color: #e2b7a6;
+    background-color: #eceaff;
     width: 35%; height: 90%;
     border-radius: 20px;
 }
@@ -269,7 +269,7 @@ main{
     height: 50px;
     border-radius: 20px;
     bottom: 40%; left: 10%;
-    background-color: #ffa273;
+    background-color: #c2bcff;
     border-style: none;
     font-size: 1.1rem;
     font-weight: bold;
@@ -759,7 +759,7 @@ iframe,
     position: absolute;
     top: 80%; left: 15%;
     
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #5a6345;
 
     letter-spacing:-0.01em;
